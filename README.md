@@ -15,6 +15,7 @@ Prerequistes:
    
 2) Run the below DDL in MySQL command prompt:
 
+```
    use test;
    
   CREATE TABLE `member` (
@@ -55,5 +56,7 @@ Prerequistes:
   CONSTRAINT `rating_ibfk_1` FOREIGN KEY (`rating_pj_id`) REFERENCES `pj` (`pj_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `rating_ibfk_2` FOREIGN KEY (`rating_by_member_id`) REFERENCES `member` (`member_id`) ON DELETE CASCADE ON UPDATE CASCADE
   ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  
+```
   
 3) Use registration code "e05678b3fcf4f11551586a3f3c2b65fde212ed2a" for first time user registration.    
